@@ -20,3 +20,7 @@ Figure2. System setup
 To bring up each node we need to run the related python code For example to bring up the realsense camera:
 ##
     rosrun camera camera.py
+The camera node uses the trained model to detect single trees and bunches, reporting their position and orientation. The decision node then coordinates the robots for singulation or instructs the conveyor to stop or run.
+<p align="center" >
+<img src="https://github.com/user-attachments/assets/fda4ed9b-a95c-4a78-9810-d9bb0b86b5de"alt="Picture3" width="300" height="300" />
+
