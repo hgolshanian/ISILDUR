@@ -3,6 +3,7 @@ This project is about developing a closed-loop system that integrates robotic ma
 
 ![image](https://github.com/user-attachments/assets/04f865a1-2a37-4963-a2a7-e793cddb84c8)
 
+Figure1.Flowchart of the singulation algorithm.
 
 To bring up with the elbow manipulator, which is a UR3 robot, we need to run both the robot and MoveIt in the command line using the following commands:
 ##
