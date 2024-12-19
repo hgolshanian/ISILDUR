@@ -22,5 +22,9 @@ To bring up each node we need to run the related python code For example to brin
     rosrun camera camera.py
 The camera node uses the trained model to detect single trees and bunches, reporting their position and orientation. The decision node then coordinates the robots for singulation or instructs the conveyor to stop or run.
 <p align="center" >
-<img src="https://github.com/user-attachments/assets/fda4ed9b-a95c-4a78-9810-d9bb0b86b5de"alt="Picture3" width="300" height="300" />
-
+<img src="https://github.com/user-attachments/assets/fda4ed9b-a95c-4a78-9810-d9bb0b86b5de"alt="Picture3" width="300" height="200" />
+<p align="center" >
+Figure3.Actual frames of the camera, with bounding boxes in red, and images of the robot in operation.
+    
+<p align="center" >
+<img src="https://github.com/user-attachments/assets/592f1ade-24c8-4b41-9a09-9ef617e87176"alt="Picture4" width="300" height="200" />
