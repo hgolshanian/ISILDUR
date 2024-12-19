@@ -1,8 +1,6 @@
 # ISILDUR
 This project is about developing a closed-loop system that integrates robotic manipulators with a deep learning-based visual object recognition and pose estimation system for singulating tree saplings. Robotic manipulators, including a gantry robot and an elbow manipulator, emulate human hand movements. A custom dataset of annotated images was created and augmented to train the YOLOv8 model for localizing individual trees and tree bunches. The system operates in real-time within a ROS-based closed-loop framework, ensuring seamless interaction between visual feedback and robotic actions.
-![Picture1](https://github.com/user-attachments/assets/e20ad3ab-51f4-4e5f-8c75-d209c12f5b43)
-
-
+<img src="https://github.com/user-attachments/assets/e20ad3ab-51f4-4e5f-8c75-d209c12f5b43" alt="Picture1" width="100" height="200"/>
 
 To bring up with the elbow manipulator, which is a UR3 robot, we need to run both the robot and MoveIt in the command line using the following commands:
 ##
