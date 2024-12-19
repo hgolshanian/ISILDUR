@@ -28,3 +28,6 @@ Figure3.Actual frames of the camera, with bounding boxes in red, and images of t
     
 <p align="center" >
 <img src="https://github.com/user-attachments/assets/592f1ade-24c8-4b41-9a09-9ef617e87176"alt="Picture4" width="300" height="200" />
+    
+<p align="center" >
+Figure3.Splitting bunches of trees.
