@@ -13,7 +13,7 @@ To bring up with the elbow manipulator, which is a UR3 robot, we need to run bot
     
 We use ROS Noetic to establish a closed-loop system integrating the RealSense camera, UR3 robot, gantry robot, and conveyor belt. Additionally, a decision node is implemented to coordinate and control the interactions between these components.
 
-<img src="https://github.com/user-attachments/assets/e20ad3ab-51f4-4e5f-8c75-d209c12f5b43" alt="Picture1" width="300" height="200" align="right"/>
+<img src="https://github.com/user-attachments/assets/e20ad3ab-51f4-4e5f-8c75-d209c12f5b43" alt="Picture1" width="300" height="200" align="left"/>
 
 Figure2. System setup
 
