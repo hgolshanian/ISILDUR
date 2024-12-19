@@ -4,4 +4,5 @@ This project is about developing a closed-loop system that integrates robotic ma
 To work with the elbow manipulator which is a UR3 robot we need to run the robot as well as Moveit in the command line through these codes:
 ##
     roslaunch ur_robot_driver ur3e_bringup.launch robot_ip:=192.168.0.100
-'''roslaunch ur3e_moveit_config moveit_planning_execution.launch limited:=true'''
+##
+        roslaunch ur3e_moveit_config moveit_planning_execution.launch limited:=true
