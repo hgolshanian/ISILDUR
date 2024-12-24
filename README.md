@@ -23,7 +23,13 @@ We use ROS Noetic to establish a closed-loop system integrating the RealSense ca
 <p align="center" >
 Figure2. System setup
 Here is how the closed-loop system works:
-https://github.com/user-attachments/assets/a62ea448-a636-4e57-b1d0-cf3ede3a1fb7
+  
+
+https://github.com/user-attachments/assets/db30ec71-7a7f-44c0-b000-a3754b6d9e29
+
+  
+
+
 <p align="center" >
 Figure3.Real closed-loop system.
 
