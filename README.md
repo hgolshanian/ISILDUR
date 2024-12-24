@@ -4,7 +4,10 @@ This project is about developing a closed-loop system that integrates robotic ma
 ![image](https://github.com/user-attachments/assets/04f865a1-2a37-4963-a2a7-e793cddb84c8)
 
 Figure1.Flowchart of the singulation algorithm.
-https://github.com/hgolshanian/ISILDUR/blob/main/Video/Media1.mp4
+
+
+https://github.com/user-attachments/assets/bfc5af89-9422-4354-9094-db2dcbf6b5ce
+
 
 
 
