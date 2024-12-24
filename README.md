@@ -7,7 +7,7 @@ Figure1.Flowchart of the singulation algorithm.
 
 
 
-
+<source src="https://github.com/hgolshanian/ISILDUR/tree/main/Video"width="300" height="300" />
 
 
 To bring up with the elbow manipulator, which is a UR3 robot, we need to run both the robot and MoveIt in the command line using the following commands:
