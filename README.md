@@ -11,7 +11,7 @@ https://github.com/user-attachments/assets/bfc5af89-9422-4354-9094-db2dcbf6b5ce
 <p align="center" >
 Figure2. Simulated UR3 Robot, Conveyor belt and the IGUS gantry robot in Gazebo 
     
-To bring up with the elbow manipulator, which is a UR3 robot, we need to run both the robot and MoveIt in the command line using the following commands:
+In Realsystem to bring up with the elbow manipulator, which is a UR3 robot, we need to run both the robot and MoveIt in the command line using the following commands:
 ##
     roslaunch ur_robot_driver ur3e_bringup.launch robot_ip:=192.168.0.100
 ##
