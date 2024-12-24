@@ -22,6 +22,10 @@ We use ROS Noetic to establish a closed-loop system integrating the RealSense ca
 <img src="https://github.com/user-attachments/assets/e20ad3ab-51f4-4e5f-8c75-d209c12f5b43" alt="Picture1" width="300" height="300" />
 <p align="center" >
 Figure2. System setup
+Here is how the closed-loop system works:
+https://github.com/user-attachments/assets/a62ea448-a636-4e57-b1d0-cf3ede3a1fb7
+<p align="center" >
+Figure3.Real closed-loop system.
 
 To bring up each node we need to run the related python code For example to bring up the realsense camera:
 ##
@@ -37,3 +41,4 @@ Figure3.Actual frames of the camera, with bounding boxes in red, and images of t
     
 <p align="center" >
 Figure3.Splitting bunches of trees.
+
