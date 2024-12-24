@@ -5,6 +5,12 @@ This project is about developing a closed-loop system that integrates robotic ma
 
 Figure1.Flowchart of the singulation algorithm.
 
+
+
+https://github.com/user-attachments/assets/88cc1f5f-f5b8-4e09-91d3-3a35a969549e
+
+
+
 To bring up with the elbow manipulator, which is a UR3 robot, we need to run both the robot and MoveIt in the command line using the following commands:
 ##
     roslaunch ur_robot_driver ur3e_bringup.launch robot_ip:=192.168.0.100
