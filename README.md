@@ -7,7 +7,6 @@ Figure1.Flowchart of the singulation algorithm.
 
 
 
-https://github.com/user-attachments/assets/88cc1f5f-f5b8-4e09-91d3-3a35a969549e
 
 
 
