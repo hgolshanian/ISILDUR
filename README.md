@@ -82,6 +82,7 @@ https://github.com/user-attachments/assets/db30ec71-7a7f-44c0-b000-a3754b6d9e29
 Figure4.Real closed-loop system.
 
 The 'decide' node:
+
 -Instructs robots to singulate trees
 -Commands the conveyor to stop/start based on object detection results
 
@@ -91,14 +92,16 @@ The flowchart for the decision algorithm is presented in Figure 5.
 <p align="center" >
 Figure5. ROS architecture
 
-
+🎯 Camera Node & Object Detection
 
 The camera node uses the trained model to detect single trees and bunches, reporting their position and orientation. The decision node then coordinates the robots for singulation or instructs the conveyor to stop or run.
 <p align="center" >
 <img src="https://github.com/user-attachments/assets/fda4ed9b-a95c-4a78-9810-d9bb0b86b5de"alt="Picture3" width="300" height="200" />
 <p align="center" >
-Figure3.Actual frames of the camera, with bounding boxes in red, and images of the robot in operation.
-    
+Figure6.Actual frames of the camera, with bounding boxes in red, and images of the robot in operation.
+
+ 🌳 Splitting Tree Bunches
+ 
 <p align="center" >
 <img src="https://github.com/user-attachments/assets/592f1ade-24c8-4b41-9a09-9ef617e87176"alt="Picture4" width="300" height="200" />
     
