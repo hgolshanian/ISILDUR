@@ -49,6 +49,12 @@ Launch the intermediate Node:
 ##
     rosrun connection connection.py
 
+The gantry robot has three axes and is responsible for holding part of a tree bunch, allowing the UR3 robot to split the remaining portion.
+
+Launch the Gantry Node:
+##
+    rosrun camera camera.py
+
 The 'Decision' node contains the algorithm that controls the singulation process. The flowchart for the decision algorithm is presented in Figure 3.
 <p align="center" >
 <img width="993" height="508" alt="ROS architecture" src="https://github.com/user-attachments/assets/a9f20d7e-82d4-4abe-96eb-d46144257692" />
