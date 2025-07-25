@@ -101,7 +101,8 @@ The camera node uses the trained model to detect single trees and bunches, repor
 Figure6.Actual frames of the camera, with bounding boxes in red, and images of the robot in operation.
 
  🌳 Splitting Tree Bunches
- 
+The gantry robot holds part of the bunch, while the UR3 robot performs the splitting.
+
 <p align="center" >
 <img src="https://github.com/user-attachments/assets/592f1ade-24c8-4b41-9a09-9ef617e87176"alt="Picture4" width="300" height="200" />
     
