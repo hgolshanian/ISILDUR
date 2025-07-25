@@ -1,4 +1,22 @@
 # ISILDUR
+## 🔍 Overview
+This project develops a **closed-loop system** integrating robotic manipulators with a deep learning-based visual object recognition and pose estimation system, designed to **singulate tree saplings**.
+
+It uses:
+- A **conveyor belt**, **gantry robot** and **elbow manipulator** (UR3 robot)
+- A **YOLOv8**-trained vision system
+- A **custom annotated dataset**
+- Real-time decision making within a **ROS-based framework**
+
+<p align="center">
+<img width="600" src="https://github.com/user-attachments/assets/8705b03b-f8d9-41b4-afc6-a9b20bce04e3" />
+</p>
+<p align="center">Figure 1. Flowchart of the singulation algorithm.</p>
+
+---
+
+
+
 This project is about developing a closed-loop system that integrates robotic manipulators with a deep learning-based visual object recognition and pose estimation system for singulating tree saplings. Robotic manipulators, including a gantry robot and an elbow manipulator, emulate human hand movements. A custom dataset of annotated images was created and augmented to train the YOLOv8 model for localizing individual trees and tree bunches. The system operates in real-time within a ROS-based closed-loop framework, ensuring seamless interaction between visual feedback and robotic actions.
 
 <img width="1249" height="635" alt="Flowchart" src="https://github.com/user-attachments/assets/8705b03b-f8d9-41b4-afc6-a9b20bce04e3" />
