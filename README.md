@@ -84,6 +84,7 @@ Figure4.Real closed-loop system.
 The 'decide' node:
 
 -Instructs robots to singulate trees
+
 -Commands the conveyor to stop/start based on object detection results
 
 The flowchart for the decision algorithm is presented in Figure 5.
@@ -101,6 +102,7 @@ The camera node uses the trained model to detect single trees and bunches, repor
 Figure6.Actual frames of the camera, with bounding boxes in red, and images of the robot in operation.
 
  🌳 Splitting Tree Bunches
+ 
 The gantry robot holds part of the bunch, while the UR3 robot performs the splitting.
 
 <p align="center" >
