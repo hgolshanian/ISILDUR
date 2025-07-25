@@ -49,8 +49,11 @@ Launch the intermediate Node:
 ##
     rosrun connection connection.py
 
-
-
+The 'Decision' node contains the algorithm that controls the singulation process. The flowchart for the decision algorithm is presented in Figure 3.
+<p align="center" >
+<img width="993" height="508" alt="ROS architecture" src="https://github.com/user-attachments/assets/a9f20d7e-82d4-4abe-96eb-d46144257692" />
+<p align="center" >
+Figure3. ROS architecture
     
 We use ROS Noetic to establish a closed-loop system integrating the RealSense camera, UR3 robot, gantry robot, and conveyor belt. Additionally, a decision node is implemented to coordinate and control the interactions between these components.
 <p align="center" >
