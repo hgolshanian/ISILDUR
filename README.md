@@ -4,12 +4,6 @@ This project is about developing a closed-loop system that integrates robotic ma
 <img width="1249" height="635" alt="Flowchart" src="https://github.com/user-attachments/assets/8705b03b-f8d9-41b4-afc6-a9b20bce04e3" />
 Figure1.Flowchart of the singulation algorithm.
 
-At first we simulated the close loop system in gazebo: 
-
-https://github.com/user-attachments/assets/bfc5af89-9422-4354-9094-db2dcbf6b5ce
-<p align="center" >
-Figure2. Simulated UR3 Robot, Conveyor belt and the IGUS gantry robot in Gazebo 
-    
 In Realsystem to bring up with the elbow manipulator, which is a UR3 robot, we need to run both the robot and MoveIt in the command line using the following commands:
 ##
     roslaunch ur_robot_driver ur3e_bringup.launch robot_ip:=192.168.0.100
