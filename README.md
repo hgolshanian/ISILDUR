@@ -33,10 +33,6 @@ We use **ROS Noetic** to integrate:
 
 ## 🚀 How to Launch
 
-### Bring up the UR3 Robot and MoveIt
-```bash
-roslaunch ur_robot_driver ur3e_bringup.launch robot_ip:=192.168.0.100
-roslaunch ur3e_moveit_config moveit_planning_execution.launch limited:=true
 In Realsystem to bring up with the elbow manipulator, which is a UR3 robot, we need to run both the robot and MoveIt in the command line using the following commands:
 ##
     roslaunch ur_robot_driver ur3e_bringup.launch robot_ip:=192.168.0.100
