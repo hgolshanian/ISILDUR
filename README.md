@@ -34,11 +34,21 @@ We use **ROS Noetic** to integrate:
 ## 🚀 How to Launch
 
 In Realsystem to bring up with the elbow manipulator, which is a UR3 robot, we need to run both the robot and MoveIt in the command line using the following commands:
-```bash
+
 ##
     roslaunch ur_robot_driver ur3e_bringup.launch robot_ip:=192.168.0.100
 ##
     roslaunch ur3e_moveit_config moveit_planning_execution.launch limited:=true
+
+Launch the Camera Node:
+##
+    rosrun camera camera.py
+
+The camera node detects individual trees and bunches, passing their position and orientation to an intermediate node that buffers the latest 10 frames. This buffering helps reduce the likelihood of missing a tree due to bounding box flickering caused by vision system uncertainty.
+Launch the Camera Node:
+##
+    rosrun camera camera.py
+
     
 We use ROS Noetic to establish a closed-loop system integrating the RealSense camera, UR3 robot, gantry robot, and conveyor belt. Additionally, a decision node is implemented to coordinate and control the interactions between these components.
 <p align="center" >
