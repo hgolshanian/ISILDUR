@@ -45,9 +45,11 @@ Launch the Camera Node:
     rosrun camera camera.py
 
 The camera node detects individual trees and bunches, passing their position and orientation to an intermediate node that buffers the latest 10 frames. This buffering helps reduce the likelihood of missing a tree due to bounding box flickering caused by vision system uncertainty.
-Launch the Camera Node:
+Launch the intermediate Node:
 ##
-    rosrun camera camera.py
+    rosrun connection connection.py
+
+
 
     
 We use ROS Noetic to establish a closed-loop system integrating the RealSense camera, UR3 robot, gantry robot, and conveyor belt. Additionally, a decision node is implemented to coordinate and control the interactions between these components.
