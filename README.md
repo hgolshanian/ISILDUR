@@ -22,7 +22,7 @@ We use **ROS Noetic** to integrate:
 - **UR3 robot**
 - **Gantry robot**
 - **Conveyor belt**
-- A **decision node** to coordinate all components
+- A **decide node** to coordinate all components
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/e20ad3ab-51f4-4e5f-8c75-d209c12f5b43" width="300"/>
@@ -40,46 +40,59 @@ In Realsystem to bring up with the elbow manipulator, which is a UR3 robot, we n
 ##
     roslaunch ur3e_moveit_config moveit_planning_execution.launch limited:=true
 
-Launch the Camera Node:
-##
-    rosrun camera camera.py
+The 'camera' node detects individual trees and bunches, passing their position and orientation to an intermediate node that buffers the latest 10 frames. This buffering helps reduce the likelihood of missing a tree due to bounding box flickering caused by vision system uncertainty.
 
-The camera node detects individual trees and bunches, passing their position and orientation to an intermediate node that buffers the latest 10 frames. This buffering helps reduce the likelihood of missing a tree due to bounding box flickering caused by vision system uncertainty.
+Launch the camera Node:
+##
+    rosrun Camera camera.py
 Launch the intermediate Node:
 ##
-    rosrun connection connection.py
+    rosrun Connection connection.py
 
-The gantry robot has three axes and is responsible for holding part of a tree bunch, allowing the UR3 robot to split the remaining portion.
+The gantry robot has three axes and is responsible for holding part of a tree bunch, allowing the UR3 robot to split the remaining portion. We have three nodes for three axes.
 
-Launch the Gantry Node:
+Launch the Gantry Nodes:
 ##
-    rosrun camera camera.py
+    rosrun Gantry gantryx.py
+##
+    rosrun Gantry gantryy.py
+##
+    rosrun Gantry gantryz.py    
 
-The 'Decision' node contains the algorithm that controls the singulation process. The flowchart for the decision algorithm is presented in Figure 3.
+The conveyor belt is responsible for transporting the bunches of trees toward the robots for singulation.
+
+Launch the 'conveyor' Node:
+##
+    rosrun Conveyor conveyor.py
+
+The 'decide' node contains the algorithm that controls the singulation process. 
+
+Launch the 'decide' Node:
+##
+    rosrun Decision decide.py
+    
+🔄 Closed-loop System Workflow
+    
+We use ROS Noetic to establish a closed-loop system integrating the RealSense camera, UR3 robot, Gantry robot, and conveyor belt. 
+
+The system operates as follows:
+
+https://github.com/user-attachments/assets/db30ec71-7a7f-44c0-b000-a3754b6d9e29
+<p align="center" >
+Figure4.Real closed-loop system.
+
+The 'decide' node:
+-Instructs robots to singulate trees
+-Commands the conveyor to stop/start based on object detection results
+
+The flowchart for the decision algorithm is presented in Figure 5.
 <p align="center" >
 <img width="993" height="508" alt="ROS architecture" src="https://github.com/user-attachments/assets/a9f20d7e-82d4-4abe-96eb-d46144257692" />
 <p align="center" >
-Figure3. ROS architecture
-    
-We use ROS Noetic to establish a closed-loop system integrating the RealSense camera, UR3 robot, gantry robot, and conveyor belt. Additionally, a decision node is implemented to coordinate and control the interactions between these components.
-<p align="center" >
-<img src="https://github.com/user-attachments/assets/e20ad3ab-51f4-4e5f-8c75-d209c12f5b43" alt="Picture1" width="300" height="300" />
-<p align="center" >
-Figure2. System setup
-Here is how the closed-loop system works:
-  
-
-https://github.com/user-attachments/assets/db30ec71-7a7f-44c0-b000-a3754b6d9e29
-
-  
+Figure5. ROS architecture
 
 
-<p align="center" >
-Figure3.Real closed-loop system.
 
-To bring up each node we need to run the related python code For example to bring up the realsense camera:
-##
-    rosrun camera camera.py
 The camera node uses the trained model to detect single trees and bunches, reporting their position and orientation. The decision node then coordinates the robots for singulation or instructs the conveyor to stop or run.
 <p align="center" >
 <img src="https://github.com/user-attachments/assets/fda4ed9b-a95c-4a78-9810-d9bb0b86b5de"alt="Picture3" width="300" height="200" />
