@@ -3,7 +3,7 @@
 This project develops a **closed-loop system** integrating robotic manipulators with a deep learning-based visual object recognition and pose estimation system, designed to **singulate tree saplings**.
 
 It uses:
-- A **conveyor belt**, **gantry robot** and **elbow manipulator** (UR3 robot)
+- A **conveyor belt**, **gantry robot** and **elbow manipulator** (UR3e robot)
 - A **YOLOv8**-trained vision system
 - A **custom annotated dataset**
 - Real-time decision making within a **ROS-based framework**
@@ -19,7 +19,7 @@ It uses:
 
 We use **ROS Noetic** to integrate:
 - **RealSense camera**
-- **UR3 robot**
+- **UR3e robot**
 - **Gantry robot**
 - **Conveyor belt**
 - A **Decision node** to coordinate all components
@@ -33,7 +33,7 @@ We use **ROS Noetic** to integrate:
 
 ## 🚀 How to Launch
 
-In Realsystem to bring up with the elbow manipulator, which is a UR3 robot, we need to run both the robot and MoveIt in the command line using the following commands:
+In Realsystem to bring up with the elbow manipulator, which is a UR3e robot, we need to run both the robot and MoveIt in the command line using the following commands:
 
 ##
     roslaunch ur_robot_driver ur3e_bringup.launch robot_ip:=192.168.0.100
@@ -49,7 +49,7 @@ Launch the intermediate node:
 ##
     rosrun Connection connection.py
 
-The gantry robot has three axes and is responsible for holding part of a tree bunch, allowing the UR3 robot to split the remaining portion. We have three nodes for three axes.
+The gantry robot has three axes and is responsible for holding part of a tree bunch, allowing the UR3e robot to split the remaining portion. We have three nodes for three axes.
 
 Launch the 'Gantry' nodes:
 ##
@@ -73,7 +73,7 @@ Launch the 'Decision' node:
     
 🔄 Closed-loop System Workflow
     
-We use ROS Noetic to establish a closed-loop system integrating the RealSense camera, UR3 robot, Gantry robot, and conveyor belt. 
+We use ROS Noetic to establish a closed-loop system integrating the RealSense camera, UR3e robot, Gantry robot, and conveyor belt. 
 
 The system operates as follows:
 
@@ -103,7 +103,7 @@ Figure6.Actual frames of the camera, with bounding boxes in red, and images of t
 
  🌳 Splitting Tree Bunches
  
-The gantry robot holds part of the bunch, while the UR3 robot performs the splitting.
+The gantry robot holds part of the bunch, while the UR3e robot performs the splitting.
 
 <p align="center" >
 <img src="https://github.com/user-attachments/assets/592f1ade-24c8-4b41-9a09-9ef617e87176"alt="Picture4" width="300" height="200" />
