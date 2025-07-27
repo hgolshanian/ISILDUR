@@ -22,7 +22,7 @@ We use **ROS Noetic** to integrate:
 - **UR3 robot**
 - **Gantry robot**
 - **Conveyor belt**
-- A **decide node** to coordinate all components
+- A **Decision node** to coordinate all components
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/e20ad3ab-51f4-4e5f-8c75-d209c12f5b43" width="300"/>
@@ -40,18 +40,18 @@ In Realsystem to bring up with the elbow manipulator, which is a UR3 robot, we n
 ##
     roslaunch ur3e_moveit_config moveit_planning_execution.launch limited:=true
 
-The 'camera' node detects individual trees and bunches, passing their position and orientation to an intermediate node that buffers the latest 10 frames. This buffering helps reduce the likelihood of missing a tree due to bounding box flickering caused by vision system uncertainty.
+The 'Camera' node detects individual trees and bunches, passing their position and orientation to an intermediate node that buffers the latest 10 frames. This buffering helps reduce the likelihood of missing a tree due to bounding box flickering caused by vision system uncertainty.
 
-Launch the camera Node:
+Launch the 'Camera' node:
 ##
     rosrun Camera camera.py
-Launch the intermediate Node:
+Launch the intermediate node:
 ##
     rosrun Connection connection.py
 
 The gantry robot has three axes and is responsible for holding part of a tree bunch, allowing the UR3 robot to split the remaining portion. We have three nodes for three axes.
 
-Launch the Gantry Nodes:
+Launch the 'Gantry' nodes:
 ##
     rosrun Gantry gantryx.py
 ##
@@ -61,13 +61,13 @@ Launch the Gantry Nodes:
 
 The conveyor belt is responsible for transporting the bunches of trees toward the robots for singulation.
 
-Launch the 'conveyor' Node:
+Launch the 'Conveyor' node:
 ##
     rosrun Conveyor conveyor.py
 
-The 'decide' node contains the algorithm that controls the singulation process. 
+The 'Decision' node contains the algorithm that controls the singulation process. 
 
-Launch the 'decide' Node:
+Launch the 'Decision' node:
 ##
     rosrun Decision decide.py
     
@@ -81,7 +81,7 @@ https://github.com/user-attachments/assets/db30ec71-7a7f-44c0-b000-a3754b6d9e29
 <p align="center" >
 Figure4.Real closed-loop system.
 
-The 'decide' node:
+The 'Decision' node:
 
 -Instructs robots to singulate trees
 
@@ -93,9 +93,9 @@ The flowchart for the decision algorithm is presented in Figure 5.
 <p align="center" >
 Figure5. ROS architecture
 
-🎯 Camera Node & Object Detection
+🎯 'Camera' node & Object Detection
 
-The camera node uses the trained model to detect single trees and bunches, reporting their position and orientation. The decision node then coordinates the robots for singulation or instructs the conveyor to stop or run.
+The 'Camera' node uses the trained model to detect single trees and bunches, reporting their position and orientation. The 'Decision' node then coordinates the robots for singulation or instructs the conveyor to stop or run.
 <p align="center" >
 <img src="https://github.com/user-attachments/assets/fda4ed9b-a95c-4a78-9810-d9bb0b86b5de"alt="Picture3" width="300" height="200" />
 <p align="center" >
