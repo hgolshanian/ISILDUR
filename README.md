@@ -3,7 +3,7 @@
 This project develops a **closed-loop system** integrating robotic manipulators with a deep learning-based visual object recognition and pose estimation system, designed to **singulate tree saplings**.
 
 It uses:
-- A **conveyor belt**, **gantry robot** and **elbow manipulator** (UR3e robot)
+- A **conveyor belt**, **Gantry robot** and **elbow manipulator** (UR3e robot)
 - A **YOLOv8**-trained vision system
 - A **custom annotated dataset**
 - Real-time decision making within a **ROS-based framework**
@@ -40,7 +40,7 @@ In Realsystem to bring up with the elbow manipulator, which is a UR3e robot, we 
 ##
     roslaunch ur3e_moveit_config moveit_planning_execution.launch limited:=true
 
-The 'Camera' node detects individual trees and bunches, passing their position and orientation to an intermediate node that buffers the latest 10 frames. This buffering helps reduce the likelihood of missing a tree due to bounding box flickering caused by vision system uncertainty.
+The 'Camera' node detects single trees and bunches, passing their position and orientation to an intermediate node that buffers the latest 10 frames. This buffering helps reduce the likelihood of missing a tree due to bounding box flickering caused by vision system uncertainty.
 
 Launch the 'Camera' node:
 ##
@@ -49,7 +49,7 @@ Launch the intermediate node:
 ##
     rosrun Connection connection.py
 
-The gantry robot has three axes and is responsible for holding part of a tree bunch, allowing the UR3e robot to split the remaining portion. We have three nodes for three axes.
+The Gantry robot has three axes and is responsible for holding part of a tree bunch, allowing the UR3e robot to split the remaining portion. We have three nodes for three axes.
 
 Launch the 'Gantry' nodes:
 ##
@@ -103,7 +103,7 @@ Figure6.Actual frames of the camera, with bounding boxes in red, and images of t
 
  🌳 Splitting Tree Bunches
  
-The gantry robot holds part of the bunch, while the UR3e robot performs the splitting.
+The Gantry robot holds part of the bunch, while the UR3e robot performs the splitting.
 
 <p align="center" >
 <img src="https://github.com/user-attachments/assets/592f1ade-24c8-4b41-9a09-9ef617e87176"alt="Picture4" width="300" height="200" />
