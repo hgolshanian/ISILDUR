@@ -77,9 +77,9 @@ We use ROS Noetic to establish a closed-loop system integrating the RealSense ca
 
 The system operates as follows:
 
-https://github.com/user-attachments/assets/db30ec71-7a7f-44c0-b000-a3754b6d9e29
+https://github.com/user-attachments/assets/d59a17dc-864d-4a23-bcd0-a5f46a01a597
 <p align="center" >
-Figure4.Real closed-loop system.
+Figure3.Real closed-loop system.
 
 The 'Decision' node:
 
@@ -87,11 +87,11 @@ The 'Decision' node:
 
 -Commands the conveyor to stop/start based on object detection results
 
-The flowchart for the decision algorithm is presented in Figure 5.
+The flowchart for the decision algorithm in ROS architecture is presented in Figure4.
 <p align="center" >
 <img width="993" height="508" alt="ROS architecture" src="https://github.com/user-attachments/assets/a9f20d7e-82d4-4abe-96eb-d46144257692" />
 <p align="center" >
-Figure5. ROS architecture
+Figure4. ROS architecture
 
 🎯 'Camera' node & Object Detection
 
@@ -99,7 +99,7 @@ The 'Camera' node uses the trained model to detect single trees and bunches, rep
 <p align="center" >
 <img src="https://github.com/user-attachments/assets/fda4ed9b-a95c-4a78-9810-d9bb0b86b5de"alt="Picture3" width="300" height="200" />
 <p align="center" >
-Figure6.Actual frames of the camera, with bounding boxes in red, and images of the robot in operation.
+Figure5.Actual frames of the camera, with bounding boxes in red, and images of the robot in operation.
 
  🌳 Splitting Tree Bunches
  
@@ -109,5 +109,5 @@ The Gantry robot holds part of the bunch, while the UR3e robot performs the spli
 <img src="https://github.com/user-attachments/assets/592f1ade-24c8-4b41-9a09-9ef617e87176"alt="Picture4" width="300" height="200" />
     
 <p align="center" >
-Figure3.Splitting bunches of trees.
+Figure6.Splitting bunches of trees.
 
