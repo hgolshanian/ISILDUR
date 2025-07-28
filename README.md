@@ -85,7 +85,6 @@ The system operates as follows:
 </p>
 <p align="center"><strong>Figure 3. Real closed-loop system.</strong></p>
 
-
 The 'Decision' node:
 
 -Instructs robots to singulate trees
