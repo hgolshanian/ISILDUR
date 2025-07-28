@@ -77,14 +77,14 @@ We use ROS Noetic to establish a closed-loop system integrating the RealSense ca
 
 The system operates as follows:
 
-<div align="center">
+<p align="center">
   <video width="640" height="360" controls>
     <source src="https://github.com/user-attachments/assets/7f4ed1d4-b8e3-4edf-9aa7-671f6291cdb0" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <p><strong>Figure 3. Real closed-loop system.</strong></p>
-</div>
-Figure3.Real closed-loop system.
+</p>
+<p align="center"><strong>Figure 3. Real closed-loop system.</strong></p>
+
 
 The 'Decision' node:
 
